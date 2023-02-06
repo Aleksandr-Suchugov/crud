@@ -14,7 +14,7 @@ export default class Board extends Component {
   render() {
     return (
       <>
-        <h2>Notes <span className='material-icons refresh-button' onClick={this.getNotes()}>autorenew</span></h2>
+        <h2>Notes <span className='material-icons refresh-button' onClick={this.getNotes}>autorenew</span></h2>
         <div className='list-notes'>
           {this.state.notes.map((item) => (
             <ItemNote key={item.id} note={item} onDelete={this.handleDelete} />
